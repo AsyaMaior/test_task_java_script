@@ -1,0 +1,133 @@
+body {
+  background: #fffff0;
+}
+
+.wrapper {
+  font-family: "Space Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  padding: 45px;
+  margin: 60px auto;
+  border: 1px solid #eee;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  border-width: 1px;
+  border-color: #c0c0c0;
+}
+
+button {
+  border-width: 1px;
+  border-color: #808080;
+}
+
+#input {
+  width: 100%;
+  margin: 3% 0;
+  height: 50px;
+}
+
+#input input {
+  width: 85%;
+  height: 100%;
+  border-radius: 30px;
+  border-color: #808080;
+  border-width: 1px;
+  text-indent: 20px;
+}
+
+#input button {
+  width: 12%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.buttons {
+  width: 94%;
+  margin: 3% 0%;
+}
+
+.buttons button {
+  width: 18%;
+  height: 35px;
+  border-radius: 20px;
+  margin: 0 3px;
+}
+
+ul.todo {
+  width: 100%;
+  float: left;
+  padding-left: 0;
+}
+
+ul.todo li {
+  list-style-type: none;
+  width: 100%;
+  float: left;
+  height: 50px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-indent: 20px;
+}
+
+ul.todo li div.interactBtns {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.todo li div.interactBtns button {
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  padding: 0;
+  float: left;
+}
+
+ul.todo li div.interactBtns button.complete {
+  background: #e0ffff;
+}
+
+ul.todo li div.interactBtns button.remove {
+  background: #ffe4e1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+ul.todo li div.interactBtns button.complete:hover {
+  background: #7fffd4;
+}
+
+ul.todo li div.interactBtns button.remove:hover {
+  background: #ffb6c1;
+}
+
+ul.todo#completed li {
+  text-decoration: line-through;
+}
+
+ul.todo#completed li div.interactBtns button.complete {
+  display: none;
+}
+
+ul.todo#completed li div.interactBtns {
+  width: 50px;
+}
+
+li.blue {
+  background: #b0e0e6 !important;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- TITLE -->
+      <h2>TODO LIST APP</h2>
+
+      <!-- INPUT AND ADD ACTIVITY -->
+      <div id="input">
+        <input type="text" placeholder="Enter an activity.." id="item" />
+        <button id="add">Add</button>
+      </div>
+
+      <!-- INTERACTION BUTTONS -->
+      <div class="buttons">
+        <button id="even">pick even</button>
+        <button id="odd">pick odd</button>
+        <button id="reset">reset style</button>
+        <button id="first">delete first</button>
+        <button id="last">delete last</button>
+      </div>
+
+      <!-- TODO LIST -->
+      <ul class="todo" id="todo"></ul>
+
+      <!-- COMPLETED LIST -->
+      <ul class="todo" id="completed"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
